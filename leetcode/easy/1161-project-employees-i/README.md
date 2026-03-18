@@ -1,0 +1,93 @@
+<h2><a href="https://leetcode.com/problems/project-employees-i">Project Employees I</a></h2> <img src="https://img.shields.io/badge/Difficulty-Easy-brightgreen" alt="Difficulty: Easy" /><hr><p>Table: <code>Project</code></p>
+
+<pre>
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| project_id  | int     |
+| employee_id | int     |
++-------------+---------+
+(project_id, employee_id) is the primary key of this table.
+employee_id is a foreign key to <code>Employee</code> table.
+Each row of this table indicates that the employee with employee_id is working on the project with project_id.
+</pre>
+
+<p>&nbsp;</p>
+
+<p>Table: <code>Employee</code></p>
+
+<pre>
++------------------+---------+
+| Column Name      | Type    |
++------------------+---------+
+| employee_id      | int     |
+| name             | varchar |
+| experience_years | int     |
++------------------+---------+
+employee_id is the primary key of this table. It's guaranteed that experience_years is not NULL.
+Each row of this table contains information about one employee.
+</pre>
+
+<p>&nbsp;</p>
+
+<p>Write an SQL query that reports the <strong>average</strong> experience years of all the employees for each project, <strong>rounded to 2 digits</strong>.</p>
+
+<p>Return the result table in <strong>any order</strong>.</p>
+
+<p>The query result format is in the following example.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> 
+Project table:
++-------------+-------------+
+| project_id  | employee_id |
++-------------+-------------+
+| 1           | 1           |
+| 1           | 2           |
+| 1           | 3           |
+| 2           | 1           |
+| 2           | 4           |
++-------------+-------------+
+Employee table:
++-------------+--------+------------------+
+| employee_id | name   | experience_years |
++-------------+--------+------------------+
+| 1           | Khaled | 3                |
+| 2           | Ali    | 2                |
+| 3           | John   | 1                |
+| 4           | Doe    | 2                |
++-------------+--------+------------------+
+<strong>Output:</strong> 
++-------------+---------------+
+| project_id  | average_years |
++-------------+---------------+
+| 1           | 2.00          |
+| 2           | 2.50          |
++-------------+---------------+
+<strong>Explanation:</strong> The average experience years for the first project is (3 + 2 + 1) / 3 = 2.00 and for the second project is (3 + 2) / 2 = 2.50
+</pre>
+
+<hr>
+
+<h3>Maintainer</h3>
+<p>
+<strong>Mohit Shyam Amode</strong><br>
+Data Analyst<br>
+Email: mohitshyamamode@gmail.com<br>
+LinkedIn: linkedin.com/in/mohitamode
+</p>
+
+<p>
+Professional Data Analyst with over 4 years of experience in SQL, query optimization, and structured data analysis. This repository serves as a collection of technical implementations and database solutions designed to streamline reporting workflows and provide actionable insights through efficient data handling.
+</p>
+
+<p>
+<strong>Key Expertise:</strong><br>
+- SQL Query Optimization and Database Management<br>
+- Data Visualization (Tableau, Power BI)<br>
+- Python, R, and JavaScript Development<br>
+- Structured Data Analysis and Reporting
+</p>
